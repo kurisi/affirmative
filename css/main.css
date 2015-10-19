@@ -1,0 +1,96 @@
+body {
+	background-color: #ffd259;
+ 	padding-top: 20px;
+}
+
+h1 {
+	font-family: "Playfair Display";
+}
+
+#splash {
+	background-color: #ffd259;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	margin: 0;
+	left: 0;
+	top: 0;
+	text-align: left
+}
+
+#splash h1 {
+	font-size: 130px;
+}
+
+#splash #splashtext {
+	color: ##2C271C;
+	margin-left: 100px;
+	margin-top: 300px;
+}
+
+#diagnosticslink {
+	width: auto;
+	display: inline;
+}
+
+#diagnosticslink:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#diagnosticslink span {
+	font-size: 22px;
+}
+
+.container {
+	margin: auto;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#imageContainer {
+	width: 400px;
+	margin: auto;
+}
+
+#imageContainer img {
+	width: 400px;
+	margin: 30px auto auto auto;
+	border: 10px solid #fff;
+	border-radius: 15px 15px 0 0;
+}
+.imagetext {
+	background-color: #fff;
+	font-family: "Playfair Display";
+	font-size: 13px;
+	width: 400px;
+	margin: auto;
+	text-align: left;
+	padding: 5px 20px 20px 20px;
+	border-radius: 0 0 15px 15px;
+}
+
+.imagetext .imagetextdata{
+	font-family: 'Cutive Mono';
+	margin-left: 20px;
+	float: right;
+	text-align: right;
+}
+
+#sendDiagnosticsButton {
+	width: 70px;
+	height: 30px;
+}
+
+#patientNameInput {
+	background-color: inherit;
+	border-width: 0 0 1px 0;
+	border-color: #000;
+	font-family: 'Cutive Mono';
+	font-size: 30px;
+	outline: none;
+}
+

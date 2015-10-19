@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Affirmative</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <!-- SPLASH SCREEN -->
+
+      <div id="splash">
+        <div id="splashtext">
+          <h1>Affirmative</h1>
+          <p class="lead">Someone out there is thinking of you.<br>Diagnose yourself and receive a tailored affirmation straight out of Instagram.</p>
+            <p id="diagnosticslink">To diagnostics <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span></p>
+        </div>
+      </div>
+
+      <!-- DIAGNOSTICS SCREEN -->
+
+      <div id="diagnostics">
+        <h1>Diagnostics</h1>
+        <p class="lead">What is your name?</p>
+        <input id="patientNameInput"></input>
+
+        <br><br><br>
+
+        <p class="lead">How are you feeling today?</p>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="sadRadio" value="sad" checked>
+              Sad
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="unmotivatedRadio" value="unmotivated">
+              Unmotivated
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="optionsRadios" id="failureRadio" value="failure">
+              Like a failure
+            </label>
+          </div>
+
+        <br>
+
+        <button type="submit" id="submitButton" class="btn btn-default">Get affirmation</button>
+
+      </div>
+
+      <!-- AFFIRMATION SCREEN -->
+
+      <div id="affirmation">
+        <div id="imageContainer">
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Moment.js -->
+    <script src="js/moment-with-locales.js"></script>
+
+    <!-- Custom JS -->
+
+    <script type="text/javascript" src="js/goodTags.js"></script> <!-- List of good tags -->
+    <script type="text/javascript" src="js/badTags.js"></script> <!-- List of bad tags -->
+    <!-- Mood specific tag lists -->
+    <script type="text/javascript" src="js/sadTags.js"></script> 
+    <script type="text/javascript" src="js/failureTags.js"></script> 
+    <script type="text/javascript" src="js/unmotivatedTags.js"></script> 
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
